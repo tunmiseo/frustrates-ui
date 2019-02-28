@@ -1,0 +1,269 @@
+// out: color.css, sourcemap: true, main: /std/lib.less
+
+// Standards
+@rem: 16px;
+@stdw: 50.5%;
+@stdm: 1rem;
+@stdlh: 1.4;
+
+
+// UI & Syntax Colors
+@std-workspace: @basic;
+@active-text: #d7dae0;
+@active-tab: #4f545e;
+@inactive-text: rgba(157, 165, 180, 0.6);
+@index-pain-container: 50;
+@left-pane-shadow: -20px 0 15px -3px hsla(216, 13%, 15%, 0.5);
+@normal-text: #abb2bf;
+@panel: #282c34;
+@workspace2: @container;
+@container: #21252b;
+@timecop-text: average(@normal-text, #9da5b4);
+@workspace-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+@basic: #21252b; // General colors
+@tab-bar: @workspace2;
+// General Colors
+
+@red: hsl(1, 97%, 46%);
+@orange: hsl(33, 100%, 45%);
+@yellow: @yellow-crayon;
+@green: hsl(121, 85%, 35%);
+@blue: @blue-triton;
+@purple: hsla(305, 34%, 24%, 1);
+
+@pink-hot: hsl(335, 100%, 50%);
+@red-pastel: hsla(338, 25%, 61%, 1);
+@red-pastel-accent: hsla(339, 22%, 50%, 1);
+@pink: hsla(341, 59%, 48%, 1);
+@red-royal: hsla(345, 75%, 25%, 1);
+@brown: hsla(357, 32%, 27%, 1);
+@red-pale: hsla(0, 10%, 50%, 1);
+@red: hsl(1, 97%, 46%);
+@red-std: hsl(0, 100%, 50%);
+@red-two: hsl(359, 96%, 25%);
+@red-maroon: hsla(0, 100%, 25%,1);
+@red-deep: hsla(0, 100%, 20%, 1);
+@red-cardinal: hsla(0, 73%, 31%,1);
+@red-bright: hsla(2, 72.5%, 41.5%, 1);
+@red-dark: hsl(4, 100%, 16%);
+@red-darker: hsl(12, 100%, 12.5%);
+@red-darkest: hsla(16, 45%, 15%, 1);
+@red-blood: hsla(13, 100%, 27%, 1);
+@brown-redwood: hsla(16, 65%, 33%, 1);
+@orange-pastel: hsla(30, 100%, 67%, 1);
+@orange-cream: hsla(29, 100%, 75%, 1);
+@orange: hsl(33, 100%, 45%);
+@brown-gold: hsl(34, 78%, 39%);
+@orange-std: hsla(39, 100%, 50%,1);
+@orange-yellow: hsla(40, 100%, 50%, 1);
+@gold-heart: hsl(40, 96%, 57%);
+@gold-pale: hsla(41, 75%, 64%, 1);
+@gold-triton: hsl(42, 81%, 42%);
+@gold: @gold-triton;
+@gold-metallic: hsl(46, 23%, 40%);
+@yellow-sun: hsla(43, 100%, 46%,1);
+@yellow-gold: hsla(45, 89%, 57%, 1);
+@yellow: @yellow-crayon;
+@yellow-crayon: hsla(56, 100%, 47%, 1);
+@yellow-std: hsla(60, 100%, 50%, 1);
+@yellow-sandstone: hsla(44, 40%, 70%, 1);
+@brown-sandhill: hsla(41, 36%, 53%, 1);
+@green-triton: hsla(86, 43%, 40%, 1);
+@green-summer: hsl(92, 100%, 68%);
+@green-pastel: hsla(98, 37%, 65%, 1);
+@green-pastel-accent: hsla(100, 37%, 54%, 1);
+@green-lime: hsla(120, 100%, 50%,1);
+@green-std: hsla(120, 100%, 25%, 1);
+@green: hsl(121, 50%, 50%);
+@green-saturated: hsla(125, 75%, 50%, 1);
+@green-forest: hsla(125, 55%, 25%, 1);
+@green-mint: hsla(165, 100%, 30%, 1);
+@green-teal: hsla(168, 50%, 37.5%, 1);
+@blue-ice: #BAE4E5;
+@blue-rich: hsla(184, 100%, 42%, 1);
+@blue-teal: hsla(187, 100%, 17.5%, 1);
+@blue-lagunita: hsla(188, 100%, 28%, 1);
+@blue: @blue-triton;
+@blue-triton: hsla(197, 100%, 29%, 1);
+@blue-sky: hsla(198, 100%, 42%, 1);
+@blue-bright: hsla(204, 100%, 36%, 1);
+@blue-cardinal: hsla(204, 100%, 28%, 1);
+@blue-pastel: hsla(206, 47%, 58%, 1);
+@blue-pastel-accent: hsla(207, 41%, 47%, 1);
+@blue-dark: hsla(216, 50%, 19%, 1);
+@blue-gray: hsl(218, 17%, 55%);
+@violet: hsl(241, 96%, 88%);
+@violet-fade-light: hsla(240, 15%, 75%, 1);
+@purple: hsla(305, 34%, 24%, 1);
+@purple-dark: #420943;
+@white: hsl(0, 0%, 100%);
+@white-off: hsl(0, 0%, 99%);
+@white-off-off: hsl(0, 0%, 97.5%);
+@white-fog: hsl(0, 0%, 95%);
+@white-sandstone: hsl(42, 45%, 95%);
+@vanilla: hsl(57, 80%, 93%);
+@gray-cloud: hsl(48, 16%, 82%);
+@white-accent: hsl(0, 0%, 86%);
+@white-dark: hsl(140, 2%, 77%);
+@gray-fade: hsla(0, 0%, 83%, 0.2784313725490196);
+@gray-light-warm: hsl(34, 7%, 69%);
+@gray-light: hsl(150, 2%, 61%);
+@gray-lightstone: hsla(35, 7%, 54%, 1);
+@gray-burnt: hsla(266, 5%, 35%, 1);
+@gray-cool: hsla(209, 1%, 46%, 1);
+@gray: hsl(0, 0%, 48%);
+@gray-clay: hsl(28, 9%, 34%);
+@gray-darkstone: hsla(4, 7%, 30%, 1);
+@brown-light: hsl(16, 12%, 30%);
+@brown-fade: hsla(15, 45%, 12%, 0.75);
+@gray-warm: hsl(48, 13%, 21%);
+@gray-dark: hsl(210, 6%, 28%);
+@gray-shadow: hsla(0, 0%, 30%, 0.20);
+@gray-gunmetal: hsla(0, 0%, 20%, 1);
+@black-text: hsla(48, 5%, 17%, 1);
+@black-chocolate: hsla(0, 13%, 16%, 1);
+@blackish: hsla(210, 7%, 16%, 1);
+@blacker: hsl(210, 6%, 12%);
+@gray-darker: hsla(0, 0%, 13%, 1);
+@black-print: hsla(0, 0%, 10%, 1);
+@black: hsl(0, 0%, 0%);
+@black-fade-extra: hsla(0, 0%, 100%, 0.15);
+
+@red-pastel: hsla(338, 25%, 61%, 1);
+@red-pastel-accent: hsla(339, 22%, 50%, 1);
+@orange-pastel: hsla(30, 100%, 67%, 1);
+@green-pastel: hsla(98, 37%, 65%, 1);
+@green-pastel-accent: hsla(100, 37%, 54%, 1);
+@blue-pastel: hsla(206, 47%, 58%, 1);
+@blue-pastel-accent: hsla(207, 41%, 47%, 1);
+
+
+/**  Stanford Color Palette  **/
+// Primary
+// @red-cardinal: hsla(0, 73%, 31%,1);
+// @white-cardinal: @white;
+// @grey-cardinal: hsla(219, 3%, 31%, 1);
+// @black-cardinal: hsla(48, 5%, 17%, 1);
+// // Secondary
+// @red-brighter: hsla(356, 95%, 35%, 1);
+// @red-darkish: hsla(0, 100%, 25%, 1);
+// @brown-gold: hsla(34, 78%, 39%, 1);
+// @yellow-sun: hsla(43, 100%, 46%, 1);
+// @orange-poppy: hsla(33, 100%, 45%, 1);
+// @black-text: hsla(48, 5%, 17%, 1);
+// @black-chocolate: hsla(0, 13%, 16%, 1);
+// @gray-darkstone: hsla(4, 7%, 30%, 1);
+// @gray-lightstone: hsla(35, 7%, 54%, 1);
+// @gray-clay: hsla(28, 9%, 34%, 1);
+// @gray-cloud: hsla(48, 16%, 82%, 1);
+// @gray-driftwood: @gray-light-warm;
+// @brown-sandhill: hsla(41, 36%, 53%, 1);
+// @white-fog: hsla(0, 0%, 95%, 1);
+// @white-sandstone: hsla(42, 45%, 95%, 1);
+// @yellow-sandstone: hsla(44, 40%, 70%, 1);
+// @grey-warm: hsla(48, 13%, 21%, 1);
+// @beige: hsla(48, 17%, 53%, 1);
+// @green-sage: hsla(109, 10%, 79%, 1);
+// @purple: hsla(305, 34%, 24%, 1);
+// @blue-teal: hsla(187, 100%, 18%, 1);
+// @blue-lagunita: hsla(188, 100%, 28%, 1);
+// @green-mint: hsla(165, 100%, 30%, 1);
+// @blue-sky: hsla(198, 100%, 42%, 1);
+// @blue-bright: hsla(204, 100%, 36%, 1);
+// @blue-cardinal: hsla(204, 100%, 28%, 1);
+// @brown-gold: hsla(34, 78%, 39%, 1);
+// @yellow-sun: hsla(43, 100%, 46%, 1);
+// @orange-poppy: hsla(33, 100%, 45%, 1);
+// @brown: hsla(357, 32%, 27%, 1);
+// @brown-redwood: hsla(16, 65%, 33%, 1);
+
+/* UCSD Color Palette */
+/* Core */
+// @blue-triton: #182B49;
+// @blue-bright-triton: #006A96;
+// @gold-triton: #c69214;
+// @yellow-gold-triton: #ffcd00;
+// /* Accents */
+// @blue-light-triton: #00c6d7;
+// @yellow-triton: #f3e500;
+// @green-triton: hsla(86, 43%, 40%, 1);
+// @orange-triton: hsl(32, 100%, 49%);
+// @average-triton: hsla(40, 100%, 50%, 1);
+// html
+// 	color: hsla(13, 100%, 27%,1);
+// 	color: spin(red)
+// 	color: hsla(344, 66%, 23%, 0.85);
+// 	color: darken(hsla(13, 100%, 27%,1), 2%);
+// }
+
+
+/**  Stanford Color Palette  **/
+// Primary
+// @red-cardinal: rgba(140, 21, 21, 1);
+// @white-cardinal: @white;
+// @grey-cardinal: rgba(77, 79, 83, 1);
+// @black-cardinal: rgba(46, 45, 41, 1);
+// // Secondary
+// @red-brighter: rgba(177, 4, 14, 1);
+// @red-darker: rgba(130,0,0,1);
+// @brown-gold: rgba(178, 111, 22, 1);
+// @yellow-sun: rgba(234, 171, 0, 1);
+// @orange-poppy: rgba(233, 131, 0, 1);
+// @black-text: rgb(46, 45, 41);
+// @black-chocolate: rgba(47, 36, 36,1);
+// @gray-darkstone: rgb(84,73, 72, 1);
+// @gray-lightstone: rgba(146, 139, 129, 1);
+// @gray-clay: rgba(95, 87, 79, 1);
+// @gray-cloud: rgba(218, 215, 203, 1);
+// @gray-driftwood: rgba(182, 177, 169, 1);
+// @brown-sandhill: rgba(179, 153, 93, 1);
+// @white-fog: rgba(244,244,244, 1);
+// @white-sandstone: rgba(249, 246, 239,1);
+// @yellow-sandstone: rgba(210, 194, 149, 1);
+// @grey-warm: rgba(63,60,48, 1);
+// @beige: rgba(157, 149, 114, 1);
+// @green-sage: rgba(199, 209, 197, 1);
+// @purple: rgba(83, 40, 79, 1);
+// @blue-teal: rgba(0, 80, 92, 1);
+// @blue-lagunita: rgba(0, 124, 146, 1);
+// @green-mint: rgba(0, 155, 118, 1);
+// @brown: rgba(94,48,50,1);
+// @brown-redwood: rgba(141, 60,30, 1);
+// @blue-sky: rgba(0, 152, 219, 1);
+// @blue-bright: #006CB8;
+// @blue-cardinal: #00548f;
+// @brown-gold: rgba(178, 111, 22, 1);
+// @yellow-sun: rgba(234, 171, 0, 1);
+// @orange-poppy: rgba(233, 131, 0, 1);
+
+
+
+
+
+
+.color-map(@color1, @color2) {
+	@spin: hue(@color2) - hue(@color1);
+	@saturate: saturation(@color2) - saturation(@color1);
+	@lighten: lightness(@color2) - lightness(@color1);
+	@alpha: alpha(@color2) - alpha(@color1);
+	color: fadeout(lighten(saturate(spin(@color1, @spin), @saturate), @lighten), @alpha);
+
+}
+
+// .color1 {
+// 	.color-map(@red, @red-dark);
+// }
+
+
+/// Color Classes
+
+// .red {
+// 	color: @red-two !important;
+// }
+//
+// .blue {
+// 	color: @blue !important;
+// 	&.dark {
+// 		color: @blue-dark !important;
+// 	}
+// }

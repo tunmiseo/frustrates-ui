@@ -1,0 +1,242 @@
+@import "colors";
+@import "/styles/colors";
+
+
+label {
+    .input-label,
+    .input-range {
+        background-color: @active-tab;
+    }
+}
+
+atom-text-editor-minimap {
+    .vertical-scrollbar {
+        display: none !important;
+    }
+}
+
+
+atom-notifications {
+    atom-notification {
+        background-color: #1d1d1d;
+        color           : #797979;
+
+        &.item {
+            border: none !important;
+        }
+
+        & .detail,
+        &.fatal .content {
+            background-color: transparent;
+            font-size       : 1em;
+
+            .close.icon.icon-x {}
+        }
+
+        & .detail,
+        &.error code {
+            color              : hsla(351, 54%, 49%, 0.9);
+            background-color   : rgba(33,37,43, 0.9);
+            -webkit-text-stroke: 0.25px;
+        }
+
+        &.error .content,
+        &.error.icon:before,
+        &.error.icon:before {
+            color     : red;
+            background: transparent !important;
+        }
+
+        &.error {
+            .close-all.btn {
+                border     : 1px solid hsla(2, 72.5%, 50.5%, 0.5);
+                color      : hsla(2, 72.5%, 50.5%, 0.7);
+                text-shadow: 0 0 1px hsla(2, 72.5%, 50.5%, 0.35);
+            }
+
+            .close.icon {
+                background: none !important;
+                color     : red !important;
+
+                &:before,
+                &:focus,
+                &:hover {
+                    background: none !important;
+                    color     : @active-tab;
+                }
+            }
+        }
+    }
+}
+
+
+.minimap {
+    background     : transparent !important;
+    scroll-behavior: smooth;
+    overflow       : hidden;
+
+    .minimap-visible-area::after {
+        background-color: none // fade(tint(@workspace, 15%), 30%) !important;
+    }
+
+    atom-text-editor[with-minimap].vertical-scrollbar {
+        display: none !important;
+    }
+}
+.tooltip {
+    .tooltip-inner,
+    .tooltip.bottom {
+        background-color: #353b45 !important;
+    }
+    & .tooltip-arrow {
+        border-top-color: #353b45 !important;
+    }
+}
+
+.hydrogen {
+    * {
+        color      : white !important;
+        background : transparent !important;
+        white-space: pre-wrap;
+
+        pre {
+            border: none !important;
+        }
+    }
+
+    .marker {
+        display    : flex;
+        flex-flow  : row nowrap;
+        align-items: center;
+    }
+
+    .multiline-container {
+        max-width: -webkit-fill-available;
+        border   : none !important;
+        margin   : 1rem 0 !important;
+        .toolbar {
+            border: none !important;
+            > *{
+                border:none !important;
+            }
+            > .icon {
+
+                box-shadow: none; // 0 0 5px 0 rgba(0, 0, 0, 0.57);
+                padding   : 0 !important;
+                margin    : 0 !important;
+                transform : scale(0.9);
+            }
+
+        }
+
+        .toolbar
+        .hydrogen_cell_display {
+            padding   : 0;
+            overflow-y: visible;
+            width     : -webkit-fill-available;
+        }
+    }
+}
+
+.timecop() {
+    div.timecop {
+        &,
+        * {
+            .noborder;
+        }
+
+        .timecop-panel {
+            background: none;
+            display   : flex;
+            flex-flow : column wrap;
+
+            .panels {
+                // background: none;
+                display  : flex;
+                flex-flow: row wrap;
+
+                > * {
+                    flex-basis: 50%;
+                }
+
+                .tool-panel {
+                    background: none;
+
+                    .inset-panel {
+                        background: none;
+
+                        div.panel-heading {
+                            background: @workspace2;
+                            text-align: center;
+                            font-size : 1em;
+                        }
+
+                        div.panel-body {
+                            // background: @workspace2;
+                            background: @editor;
+
+                            .text-info {
+                                color: @timecop-text;
+                            }
+
+                            .list-group {
+                                overflow       : scroll;
+                                max-height     : 44vh;
+                                display        : flex;
+                                flex-flow      : column nowrap;
+                                justify-content: flex-start;
+
+                                .list-item {
+                                    display        : flex;
+                                    flex-flow      : row nowrap;
+                                    justify-content: space-between;
+                                    align-items    : center;
+                                    flex           : 100% 0 0;
+
+                                    a.package {
+                                        color: @normal-text;
+
+                                        &:focus,
+                                        &:hover {
+                                            color: @active tab-text;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.atom-dock-toggle-button-inner {
+    border: none !important;
+}
+.btn {
+    &.btn-primary {
+        color           : #d7dae0;
+        text-shadow     : none;
+        border          : 1px solid hsla(223, 2%, 11%, 1);
+        background-color: darken(average(#4d78cc,#353b45), 10%);
+        background-image: linear-gradient(darken(average(#557ecf,#353b45), 10%), darken(average(#4d78cc,#353b45), 10%));
+        color           : white;
+    }
+
+    &.btn.btn-default {
+        color           : #9da5b4;
+        text-shadow     : none;
+        border          : 1px solid #181a1f;
+        background-color: #353b45;
+        background-image: linear-gradient(#3a3f4b, #353b45);
+    }
+}
+
+*:not(.lines) {
+    &,
+    &:focus {
+        outline: none !important;
+    }
+}

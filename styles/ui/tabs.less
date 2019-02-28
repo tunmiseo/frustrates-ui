@@ -1,0 +1,61 @@
+@import 'colors.less';
+
+tab-bar[is="atom-tabs"] {
+    height          : fit-content;
+    max-width       : none;
+    padding         : 0.1em 0;
+    background-color: @tab-bar !important;
+    .noborder;
+
+    li.tab[is="tabs-tab"] {
+        background: @tab !important;
+        border: none;
+        &[data-type="TreeView"] {
+            max-width: none;
+        }
+        &[data-type="TextEditor"] {
+            font-family: system-ui;
+            font-size: @tabsz;
+            &.active:before {
+                display: none !important;
+            }
+        }
+
+        &.active,
+        &:focus {
+            border: none;
+            background-color: @active-tab;
+            color     : @active-tab-text;
+            &:hover {
+                background-color: @hover;
+                ;
+                color     : @active-tab-text;
+            }
+        }
+
+
+        &, &:before {
+            left: 0;
+
+            &.active,
+            &:focus,
+            &:hover {
+                color     : @active-tab-text;
+                background: none !important;
+            }
+        }
+
+        div.title {}
+
+        &.active,
+        &:focus,
+        &:hover {
+            background: @gray !important;
+            color     : @active-text !important;
+        }
+
+        div.close-icon {
+            &:before {}
+        }
+    }
+}
